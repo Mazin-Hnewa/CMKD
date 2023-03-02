@@ -1,6 +1,6 @@
-# Cross Modality Knowledge Distillation for Robust VRU detection in low light and adverse weather condition
+# Cross Modality Knowledge Distillation for Robust Pedestrian detection in low light and adverse weather condition
 
-The goal of this project is to use knowledge distillation techniques to improve the performance of the object detectors (for VRU and Large animals) in adverse weather and low light conditions.
+The goal of this project is to use knowledge distillation techniques to improve the performance of the object detectors (for Pedestrian) in adverse weather and low light conditions.
 
 This implementation is based on [Faster R-CNN](https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf) with ResNet50-FPN backone in Pytorch using [Seeing Through Fog](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) dataset. 
 ## Usage
