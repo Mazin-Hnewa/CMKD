@@ -3,10 +3,13 @@
 The goal of this project is to use knowledge distillation techniques to improve the performance of the object detectors (for Pedestrian) in adverse weather and low light conditions.
 
 This implementation is based on [Faster R-CNN](https://proceedings.neurips.cc/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf) with ResNet50-FPN backone in Pytorch using [Seeing Through Fog](https://www.cs.princeton.edu/~fheide/AdverseWeatherFusion/) dataset. 
+
+Trained and tested with python: 3.9.7, Ubuntu:18.04.5 LTS, Cuda: 11.2, Pytorch:1.11, GPU: Geforce RTX 3090
+
 ## Usage
 - Install [PyTorch](https://pytorch.org/).
-- Download the data from [here](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EQiY_z8k_1FOnYtWzN-JljcB0k96HO5azGNu_rZsPq4jIg?e=TUhJtb) and extract the ZIP file in `data/` folder.
-- Download the [trained teacher network](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EQbkqtMSPXRHmkirHyYfStUBd5ktb0Mh4Q81noLXhx2tOQ?e=boom6E) or train it by running this comment. The teacher network is trained using both RGB images and 3 Gated slices in the dataset.
+- Download the data from [here](https://drive.google.com/file/d/1uz2vP5Bl_pmXPNCXk7ftttjvwtncCfGn/view?usp=sharing) and extract the ZIP file in `data/` folder.
+- Download the [trained teacher network](https://drive.google.com/file/d/1FShIWdq_U213vWoCUk5EMh_nMfysmx4c/view?usp=sharing) or train it by running this comment. The teacher network is trained using both RGB images and 3 Gated slices in the dataset.
 ```
 python train_teacher.py
 ``` 
@@ -26,10 +29,15 @@ python test.py
 ```
 python train_baseline.py
 ```
+- Visual detection examples can be seen by running this comment:
+```
+visual_detect.py
+```
+
 ## Results & Pretrained Weights
 |Model|COCO mAP val set| COCO mAP test set| Trained model|
 |---|---|---|---|
-Teacher|25.8|27.5|[download](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EQbkqtMSPXRHmkirHyYfStUBd5ktb0Mh4Q81noLXhx2tOQ?e=boom6E)
-|Baseline|22.5|24.2|[download](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EfTjUsojmxJJmSXrIaX7b98Bdv3NmER5iJ6UOG9DV0t8qA?e=FVdD5X)
-|CMKD-MSE|23.6|25.4|[download](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EcyNYGUdSVVHmldwy9ytTXABwXw1loMY9uomx4iFRsrFMw?e=hkwPqP)
-|CMKD-Adv|24.2|26.0|[download](https://azureford-my.sharepoint.com/:u:/g/personal/arahimpo_ford_com/EcJ5AiKKSKZGgnR9q2NzmYABnYYqeN9v7gwxfm-0wGGBSA?e=AxDSbc)
+Teacher|25.8|27.5|[download](https://drive.google.com/file/d/1FShIWdq_U213vWoCUk5EMh_nMfysmx4c/view?usp=sharing)
+|Baseline|22.5|24.2|[download](https://drive.google.com/file/d/1zT8UMh0ihzDLPP6Fy_E2G_7cAnUcluqr/view?usp=sharing)
+|CMKD-MSE|23.6|25.4|[download](https://drive.google.com/file/d/16iMhJynAi39kJac0m0NUxXlxnOphwu4G/view?usp=sharing)
+|CMKD-Adv|24.2|26.0|[download](https://drive.google.com/file/d/1m37Yb4bUKzZfilG4Xaeu0AjcR0hAzy8s/view?usp=sharing)
