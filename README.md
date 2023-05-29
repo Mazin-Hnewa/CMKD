@@ -1,5 +1,4 @@
 # Cross Modality Knowledge Distillation for Robust Pedestrian detection in low light and adverse weather condition
-## Code will be uploaded soon
 
 The goal of this project is to use knowledge distillation techniques to improve the performance of the object detectors (for Pedestrian) in adverse weather and low light conditions.
 
