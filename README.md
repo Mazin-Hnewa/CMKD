@@ -42,3 +42,15 @@ Teacher|25.8|27.5|[download](https://drive.google.com/file/d/1FShIWdq_U213vWoCUk
 |Baseline|22.5|24.2|[download](https://drive.google.com/file/d/1zT8UMh0ihzDLPP6Fy_E2G_7cAnUcluqr/view?usp=sharing)
 |CMKD-MSE|23.6|25.4|[download](https://drive.google.com/file/d/16iMhJynAi39kJac0m0NUxXlxnOphwu4G/view?usp=sharing)
 |CMKD-Adv|24.2|26.0|[download](https://drive.google.com/file/d/1m37Yb4bUKzZfilG4Xaeu0AjcR0hAzy8s/view?usp=sharing)
+
+## Citation
+```
+@inproceedings{cmkd,
+  title={Cross Modality Knowledge Distillation for Robust Pedestrian Detection in Low Light and Adverse Weather Conditions},
+  author={Hnewa, Mazin and Rahimpour, Alireza and Miller, Justin and Upadhyay, Devesh and Radha, Hayder},
+  booktitle={ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5},
+  year={2023},
+  organization={IEEE}
+}
+```
