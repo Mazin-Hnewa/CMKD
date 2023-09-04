@@ -21,7 +21,7 @@ python train_cmkd_mse.py
 ```
 python train_cmkd_adv.py
 ```
-- The trained network can be tested using valand test sets by changing the name of tested weights file in `test.py` line 109 and running this comment:
+- The trained network can be tested using val and test sets by changing the name of tested weights file in `test.py` line 109 and running this comment:
 ```
 python test.py
 ```
